@@ -1,4 +1,4 @@
-import 'package:flutter/foundation.dart';
+import 'package:denme/widget/email_textfield.dart';
 import 'package:flutter/material.dart';
 
 class RegisterPage extends StatelessWidget {
@@ -23,7 +23,7 @@ class RegisterPage extends StatelessWidget {
           child: Column(
             children: [
               SizedBox(height: 50),
-              Email(),
+              TextFieldContainer(hintText: "Email",),
               SizedBox(height: 20),
               PasswordOne(),
               SizedBox(height: 20),
@@ -40,34 +40,6 @@ class RegisterPage extends StatelessWidget {
   }
 }
 
-class Email extends StatelessWidget {
-  const Email({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
-    return Container(
-      margin: EdgeInsets.symmetric(vertical: 10),
-      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
-      width: size.width * 0.7,
-      height: size.height * 0.06,
-      decoration: BoxDecoration(
-        color: Color.fromRGBO(229, 235, 240, 1),
-        borderRadius: BorderRadius.circular(10),
-      ),
-      child: TextField(
-        decoration: InputDecoration(
-            icon: Icon(
-              Icons.person,
-              color: Color.fromRGBO(89, 60, 161, 1),
-            ),
-            hintText: "Email"),
-      ),
-    );
-  }
-}
 
 class PasswordOne extends StatelessWidget {
   const PasswordOne({
