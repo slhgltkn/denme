@@ -1,4 +1,5 @@
 import 'package:denme/Login/login.dart';
+import 'package:denme/Login/loginC.dart';
 import 'package:denme/Login/register.dart';
 import 'package:denme/anaSayfa.dart';
 import 'package:flutter/material.dart';
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.light(),
-      home: const BulusmaEkrani(),
+      home: (RegisterPageContinue()),
     );
   }
 }

@@ -9,7 +9,7 @@ environment:
   sdk: ">=2.16.2 <3.0.0"
 
 dependencies:
-  
+  flutter_rounded_date_picker: ^2.0.2
   flutter:
     sdk: flutter
 
