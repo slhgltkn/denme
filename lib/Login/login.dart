@@ -12,6 +12,7 @@ class _LoginPageState extends State<LoginPage> {
   bool _isObscure = true;
   @override
   Widget build(BuildContext context) {
+
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: buildAppBar(),
